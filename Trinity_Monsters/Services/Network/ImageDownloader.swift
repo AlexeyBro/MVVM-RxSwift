@@ -26,6 +26,8 @@ final class ImageDownloaderImpl: ImageDownloader {
                 onError: {error in
                     obs.onError(error)
                 })
+            
+//            URLSession.shared.rx.response(request: request).debug(
         }
     }
 }

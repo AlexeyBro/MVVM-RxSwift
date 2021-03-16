@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import RxSwift
 
 protocol MoviesStorage: AnyObject {
     func provideData() -> Data

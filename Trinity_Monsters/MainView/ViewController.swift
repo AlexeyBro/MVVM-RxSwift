@@ -48,11 +48,9 @@ final class ViewController: UIViewController {
     
     private func refreshView() {
         viewModel?.updateData = {
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-                self.activityView.stopAnimating()
-                self.activityView.isHidden = true
-            }
+            self.tableView.reloadData()
+            self.activityView.stopAnimating()
+            self.activityView.isHidden = true
         }
     }
 }
